@@ -25,6 +25,7 @@ protected void onCreate(Bundle savedInstanceState) {
 				LogUtils.i("---------------hasFocus-----------------");
 			}else {
 				LogUtils.i("---------------not hasFocus-----------------");
+				LogUtils.i("---------------not hasFocus-----------------");
 			}
 		}
 	});
