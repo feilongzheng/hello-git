@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnFocusChangeListener;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends Activity{
 
@@ -16,20 +17,11 @@ protected void onCreate(Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.activity_main);
 	
-	EditText et = (EditText) findViewById(R.id.et);
-	et.setOnFocusChangeListener(new OnFocusChangeListener() {
-		
-		@Override
-		public void onFocusChange(View v, boolean hasFocus) {
-			if (hasFocus) {
-				LogUtils.i("---------------hasFocus-----------------");
-			}else {
-				LogUtils.i("---------------not hasFocus-----------------");
-				LogUtils.i("---------------not hasFocus-----------------");
-			}
-		}
-	});
-	
+	TextView tView = (TextView) findViewById(R.id.tv);
+	tView.setTextColor(getResources().getColor(R.color.blue));
+	/**
+	 * jkllllllllllllllllllllllllllll
+	 */
 	
 }
 
